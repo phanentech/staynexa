@@ -961,7 +961,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal(
 function valEmail(e){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);}
 function valPhone(p){return p.replace(/\D/g,'').length>=8;}
 function shake(id){var el=document.getElementById(id);if(!el)return;el.style.animation='none';void el.offsetHeight;el.style.animation='shake 0.4s ease';setTimeout(function(){el.style.animation='';},400);}
-var WEBAPP_URL='YOUR_GAS_WEBAPP_URL_HERE'; // ← paste your /exec URL after deploying GAS
+var WEBAPP_URL='https://script.google.com/macros/s/AKfycbxlaDPzdSABNOw2MCYjCOHSp9SEOy9_KW74ZLsat-qdd_N4PChDQJsIa-r2KmbBWg9RXg/exec'; // ← paste your /exec URL after deploying GAS
 
 function submitGetStarted(){
   var fn=document.getElementById('gs-fname').value.trim();
